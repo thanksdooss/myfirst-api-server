@@ -1,8 +1,7 @@
 # 베이스 이미지로 OpenJDK 17 버전의 JRE 이미지 사용
 #FROM openjdk:26-ea-21-jdk-slim
-# Docker Hub 다운로드 제한(429) 회피: 같은 공식 이미지를 AWS ECR Public 미러에서 받음
 #FROM eclipse-temurin:21-jre
-FROM public.ecr.aws/docker/library/eclipse-temurin:21-jre
+FROM skala-registry.skala-us.com/library/eclipse-temurin:21-jre
 
 # 작업 디렉토리 설정
 WORKDIR /app
